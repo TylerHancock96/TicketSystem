@@ -1,6 +1,9 @@
 # import module
 import streamlit as st
 
+# Setting page title and favicon for window tab
+st.set_page_config(page_title="HTS - Main Page", page_icon="🤖")
+
 # title
 st.title("Hjelmar Ticketing System")
 
@@ -14,9 +17,4 @@ st.write("This is a system I created for friends and family to send me any IT/co
 
 # Get started button that will open login/sign-up page
 if st.button("Let's get started"):
-    with st.form("Login_Sign_Up"):
-        st.write("Login")
-        username = st.text_input("Username")
-        psswd = st.text_input("Password")
-        st.form_submit_button("Login")
-    st.page_link("Sign Up")
+    st.page_link("pages/Login_Page.py")
