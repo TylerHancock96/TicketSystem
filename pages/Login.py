@@ -9,5 +9,6 @@ with st.form("Login_Sign_Up"):
     st.write("Login")
     username = st.text_input("Username")
     psswd = st.text_input("Password")
-    st.form_submit_button("Login")
+    st.form_submit_button(label="Login", on_click="pages/User_Home.py")
 st.page_link("pages/Sign_Up.py")
+
